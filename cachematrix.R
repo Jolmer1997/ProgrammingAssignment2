@@ -13,13 +13,12 @@ makeCacheMatrix <- function(x = matrix()) {
         x <<- y
         m <<- NULL
     }
-    print(x)
     get <- function() x
     setinverse <- function(solve) m <<- solve
     getinverse <- function() m
-    list(set = set, get = get,      #1 and 2
+    list(set = set, get = get,      # 1 and 2
          setinverse = setinverse,   # 3
-         getinverse = getinverse)   #4
+         getinverse = getinverse)   # 4
 }
 
 ##This function computes the inverse of the special
